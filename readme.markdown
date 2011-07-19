@@ -4,8 +4,13 @@
 
 <p>Super simple growl notifications for use with the Node.js Coffeecript Compiler</p>
 
-<p>Just getting things up and running with NPM, for now just plop this into your `node_modules` folder and use it as a require when you compile.</p>
+<strong>To install:</strong>
+<p><strong>First</strong> you must install <a href="http://growl.info/extras.php#growlnotify">growlnotify</a> which is a command line tool for sending growl messages.</p>
 
+<p><strong>Second</strong> use NPM to install:</p>
+<code>npm install coffeescript-growl</code>
+
+<p><strong>Finally</strong> pop in `cofeescript-growl` as a required when compliling. Works great with --watch and --compile</p>
 <p>Example:</p>
 
-<code>coffee -r coffeescript-growl --lint --watch --compile scripts.coffee</code>
+<code>coffee -r coffeescript-growl  --watch --compile ~/sites/my_project/scripts.coffee</code>
