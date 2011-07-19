@@ -1,0 +1,18 @@
+{
+  "author": "Wes Bos <wesbos@gmail.com> (http://wesbos.com)",
+  "name": "coffeescript-growl",
+  "description": "Growl notifications for the CoffeeScript Compiler",
+  "version": "0.1",
+  "homepage": "http://wesbos.com",
+  "keywords": "coffeescript, growl, notifications",
+  "repository": {
+    "type": "git",
+    "url": "not yet"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": "~v0.4.9"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
