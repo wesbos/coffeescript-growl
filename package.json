@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/wesbos/coffeescript-growl"
   },
-  "main": "index.js",
+  "main": "coffeescript-growl.js",
   "engines": {
     "node": "~v0.4.9"
   },
