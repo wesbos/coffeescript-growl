@@ -2,7 +2,7 @@
 
 <img src="http://f.cl.ly/items/2t1H2r0i0u3x0k2Z1E2v/Screen%20shot%202011-07-19%20at%201.34.40%20AM.png" alt="" />
 
-<p>Super simple growl notifications for use with the Node.js Coffeecript Compiler</p>
+<p>Super simple growl notifications for use with the Node.js Coffeecript Compiler. No more watching the terminal to see if things compiled correctly :)</p>
 
 <strong>To install:</strong>
 <p><strong>First</strong> you must install <a href="http://growl.info/extras.php#growlnotify">growlnotify</a> which is a command line tool for sending growl messages.</p>
