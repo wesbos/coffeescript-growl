@@ -7,7 +7,7 @@
   "keywords": "coffeescript, growl, notifications",
   "repository": {
     "type": "git",
-    "url": "not yet"
+    "url": "https://github.com/wesbos/coffeescript-growl"
   },
   "main": "index.js",
   "engines": {
