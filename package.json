@@ -2,7 +2,7 @@
   "author": "Wes Bos <wesbos@gmail.com> (http://wesbos.com)",
   "name": "coffeescript-growl",
   "description": "Growl notifications for the CoffeeScript Compiler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://wesbos.com",
   "keywords": "coffeescript, growl, notifications",
   "repository": {
@@ -11,7 +11,7 @@
   },
   "main": "coffeescript-growl.js",
   "engines": {
-    "node": "~v0.4.9"
+    "node": "v0.4.8~v0.4.9"
   },
   "dependencies": {},
   "devDependencies": {}
