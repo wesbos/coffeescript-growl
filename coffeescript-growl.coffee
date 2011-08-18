@@ -11,7 +11,6 @@ App.icon = "#{__dirname}/i/coffee.png"
 
 App.notify = (message, type) ->
 	exec "growlnotify -n 'CoffeeScript Compiler' -m '#{message}' --image '#{__dirname}/i/coffee-#{type}.png'",App.puts 
-	console.log "#{message}"
 	
 
 CoffeeScript.on 'failure', (error, task) ->

@@ -9,8 +9,7 @@
   };
   App.icon = "" + __dirname + "/i/coffee.png";
   App.notify = function(message, type) {
-    exec("growlnotify -n 'CoffeeScript Compiler' -m '" + message + "' --image '" + __dirname + "/i/coffee-" + type + ".png'", App.puts);
-    return console.log("" + message);
+    return exec("growlnotify -n 'CoffeeScript Compiler' -m '" + message + "' --image '" + __dirname + "/i/coffee-" + type + ".png'", App.puts);
   };
   CoffeeScript.on('failure', function(error, task) {
     return App.notify("" + error, "error");
