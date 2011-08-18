@@ -10,7 +10,7 @@ App.puts = (error, stdout, stderr) ->
 App.icon = "#{__dirname}/i/coffee.png"
 
 App.notify = (message, type) ->
-	exec "growlnotify  -m '#{message}'	--image '#{__dirname}/i/coffee-#{type}.png'",App.puts 
+	exec "growlnotify -n 'CoffeeScript Compiler' -m '#{message}' --image '#{__dirname}/i/coffee-#{type}.png'",App.puts 
 	console.log "#{message}"
 	
 
