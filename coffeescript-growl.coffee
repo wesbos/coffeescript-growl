@@ -18,4 +18,4 @@ CoffeeScript.on 'failure', (error, task) ->
   App.notify "#{error}","error" 
   
 CoffeeScript.on 'success', (task) ->
-  App.notify "#{task.file} sucessfully compiled!","success"
+  App.notify "#{task.file} successfully compiled!","success"

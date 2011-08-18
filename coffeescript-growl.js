@@ -16,6 +16,6 @@
     return App.notify("" + error, "error");
   });
   CoffeeScript.on('success', function(task) {
-    return App.notify("" + task.file + " sucessfully compiled!", "success");
+    return App.notify("" + task.file + " successfully compiled!", "success");
   });
 }).call(this);
