@@ -1,11 +1,11 @@
 (function() {
-  var App, CoffeeScript, exec, sys;
-  sys = require('sys');
+  var App, CoffeeScript, exec, util;
+  util = require('util');
   exec = require('child_process').exec;
   CoffeeScript = require("coffee-script");
   App = {};
   App.puts = function(error, stdout, stderr) {
-    return sys.puts(stdout);
+    return util.puts(stdout);
   };
   App.icon = "" + __dirname + "/i/coffee.png";
   App.notify = function(message, type) {
