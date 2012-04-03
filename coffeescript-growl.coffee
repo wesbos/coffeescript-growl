@@ -1,11 +1,11 @@
-sys = require('sys')
+util = require('util')
 exec = require('child_process').exec
 CoffeeScript = require "coffee-script"
 
 App = {}
 
 App.puts = (error, stdout, stderr) ->
-	sys.puts(stdout)
+	util.puts(stdout)
 
 App.icon = "#{__dirname}/i/coffee.png"
 
