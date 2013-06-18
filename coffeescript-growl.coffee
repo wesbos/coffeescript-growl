@@ -1,20 +1,16 @@
-util = require('util')
 exec = require('child_process').exec
-CoffeeScript = require "coffee-script"
+coffee = require 'coffee-script'
 
-App = {}
+callback = (error, stdout, stderr) ->
+    console.log "stdout: #{stdout}" if !!stdout
+    console.log "stderr: #{stderr}" if !!stderr
+    console.log "exec error: #{error}" if error?
 
-App.puts = (error, stdout, stderr) ->
-	util.puts(stdout)
+notify = (message, type) ->
+    exec "growlnotify -m '#{message}' --image '#{__dirname}/i/coffee-#{type}.png'", callback
 
-App.icon = "#{__dirname}/i/coffee.png"
+coffee.on 'failure', (error, task) ->
+    notify error, 'error'
 
-App.notify = (message, type) ->
-	exec "growlnotify -n 'CoffeeScript Compiler' -m '#{message}' --image '#{__dirname}/i/coffee-#{type}.png'",App.puts 
-	
-
-CoffeeScript.on 'failure', (error, task) ->
-  App.notify "#{error}","error" 
-  
-CoffeeScript.on 'success', (task) ->
-  App.notify "#{task.file} successfully compiled!","success"
+coffee.on 'success', (task) ->
+    notify "#{task.file} successfully compiled", 'success'
